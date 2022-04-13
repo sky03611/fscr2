@@ -1,0 +1,955 @@
+
+newmtl blackGlass
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba010101ff.png
+
+newmtl defrostlines_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba3d1403ff.png
+
+newmtl gls_window
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+
+newmtl backfacingGeo
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+
+newmtl carPaint
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba00406bff.png
+
+newmtl gls_limoTint
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+
+newmtl rubberTrim
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl undercarriage_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\undercarriage_001_diff_ec619571-422c-41fc-8680-26243ba83c2f.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\undercarriage_001_nrml_11b04554-4460-4359-adff-c1e260f28393.png
+
+newmtl blkPLastic_RGH_LGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl carPaint|mirrorbasel_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba00406bff.png
+
+newmtl zeroBlack|mirrorbasel_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba010101ff.png
+
+newmtl blkPLastic_RGH_LGL|doorlr_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl carPaint|doorlr_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba00406bff.png
+
+newmtl rubberTrim|doorlr_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl LBK_standerdCH1_014
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rtint_001_diff_3a096542-0f71-459a-baae-c2c6a57bde11.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_002_nrml_ae54dde4-7eec-4a4b-8221-8728459c37ae.png
+
+newmtl gls_clear
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+
+newmtl Material__40|trunkemblem_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\m5_001_diff_b7f97ec3-73fb-4608-bcb0-f6f4c958a0df.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\m5_001_nrml_5bb5199c-3e02-4bd3-8de8-07baa0037c42.png
+
+newmtl keyHole_005
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbae8eaebff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\lock_003_nrml_178ca404-dbe9-4cfe-98af-2f59d4ee470e.png
+
+newmtl rubber_smooth
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl LBK_projector_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\squares_003_nrml_71f2390c-6bec-435f-83da-5264b291393a.png
+
+newmtl LBK_smoothChrome
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba9f2d00ff.png
+
+newmtl LBK_standerdch1_005
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\light_32_diff_d892a9d0-6f89-43c1-a70e-c184c48ae7f7.png
+
+newmtl blkPLastic_RGH_LGL_D3DEF8FF
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbad3def8ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl chrome
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbad3def8ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl gla_amber
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaff5c0099.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\dtl_roughtexture_002_nrml_64aeb183-87b8-4bd3-8af8-c0210accaa9e.png
+
+newmtl gls_2patternCH2_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\squares_003_nrml_71f2390c-6bec-435f-83da-5264b291393a.png
+
+newmtl gls_CH1custem_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\squares_003_nrml_71f2390c-6bec-435f-83da-5264b291393a.png
+
+newmtl gls_projector
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rtint_001_diff_3a096542-0f71-459a-baae-c2c6a57bde11.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\lgt_bucket_016_nrml_19084de6-a287-4c1b-bf07-349e5c259122.png
+
+newmtl projector
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\squares_003_nrml_71f2390c-6bec-435f-83da-5264b291393a.png
+
+newmtl brk_incandescent_1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba4d000099.png
+
+newmtl lts_incandescent_1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaff380399.png
+
+newmtl rev_incandescent_1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+
+newmtl unl_incandescent_1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+
+newmtl BMW_M5_Emblem_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\m5_001_diff_b7f97ec3-73fb-4608-bcb0-f6f4c958a0df.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\m5_001_nrml_5bb5199c-3e02-4bd3-8de8-07baa0037c42.png
+
+newmtl blkplastic_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl gls_red
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaff030099.png
+
+newmtl Side_bulb_left
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaff5c0099.png
+
+newmtl aluminum_polished
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbae8eaebff.png
+
+newmtl blkPlastic_rough
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl backfacing_geo
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+
+newmtl gls_patternch1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rectangles_023_nrml_c11e41e9-19f2-420e-abe5-f54a3afd34ce.png
+
+newmtl gls_patternch1_008
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaff0200ff.png
+
+newmtl blkPLastic_RGH_LGL|doorrf_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl carPaint|doorhandlerf_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba00406bff.png
+
+newmtl chrome_alpha
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\lock_008_nrml_b5ab75b2-26df-4c57-b5fd-faafc57a7306.png
+
+newmtl rubberTrim|doorrf_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl BMW_badge_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bmw_badge_009_diff_805e7a98-437a-451e-beb7-edf5dbc80f24.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bmw_badge_009_nrml_85c693f7-4b72-460b-9ca8-ec2717c90155.png
+
+newmtl blkPlastic_HGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba010101ff.png
+
+newmtl gls_windsheild
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+
+newmtl engineLow
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\long_v8_fi_m_diff_0055ebb0-28a3-4961-9c3e-5e7233ef34ad.png
+
+newmtl US_Plate_Atlas
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\plate_eu1_atlas_diff_6b219b24-3b6f-4602-a889-a2179445bae9.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\plate_eu1_base_nrml_49d025f0-f90c-4d68-9d39-70f82c990ba7.png
+
+newmtl US_Plate_base
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\plate_us1_base_diff_71bc27b5-9a03-40cf-bf9f-3b0dd7e929b2.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\plate_us1_base_nrml_d0bfa421-216e-404b-b12d-77961f6cd72d.png
+
+newmtl HL_LBK_custom_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba1f150dff.png
+
+newmtl LBK_standardCH1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rectangles_007_nrml_fb0ee04b-5a9f-4b07-ace3-40dd35d13d92.png
+
+newmtl brk_LBK_standardCH1_002
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba1f150dff.png
+
+newmtl chrome_8C8D8DFF
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+
+newmtl chrome_divets_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba727473ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\pyramid_001_nrml_f8f58470-ce57-48d4-a5b3-09be5a0266c1.png
+
+newmtl chrome_ridgesCH1_005
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_011_nrml_2dcf25cd-3b36-4d8c-bd68-d1d2b4179705.png
+
+newmtl drl_gls_litridges_ch1_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_022_nrml_cf1ceae9-54ad-43e4-8efb-eaba3532f02d.png
+
+newmtl gls_ridgesCH1_003
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_002_nrml_23592955-5d94-4b4d-83a2-ac759310c50f.png
+
+newmtl lts_LBK_standardCH1_002
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rectangles_007_nrml_fb0ee04b-5a9f-4b07-ace3-40dd35d13d92.png
+
+newmtl rev_LBK_standardCH1_002
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaefd3a7ff.png
+
+newmtl ult_LBK_standardCH1_002
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rectangles_007_nrml_fb0ee04b-5a9f-4b07-ace3-40dd35d13d92.png
+
+newmtl gls_clear_FFA96AFF
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffa96aff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\paint_flake_001_nrml_e2338c68-58c7-405c-b00c-0d193bf59ee5.png
+
+newmtl GLS_CH2Custom_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\pyramid_001_nrml_f8f58470-ce57-48d4-a5b3-09be5a0266c1.png
+
+newmtl LBK_smoothChrome_L
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\squares_003_nrml_71f2390c-6bec-435f-83da-5264b291393a.png
+
+newmtl LBK_smoothChrome_R
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\squares_003_nrml_71f2390c-6bec-435f-83da-5264b291393a.png
+
+newmtl gls_edge
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_002_nrml_adf7d78a-0fed-4ebd-95d6-8f593be02bef.png
+
+newmtl gls_ridgesCH1_003_FFFFFF99
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_002_nrml_23592955-5d94-4b4d-83a2-ac759310c50f.png
+
+newmtl blk_plastic_LGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl mirrorLeft
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+
+newmtl Interior_LOD1
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bmw_m5e39_03_interior_diff_e5c02eeb-2cca-49a9-899f-479532fc7b37.png
+
+newmtl mirrorCenter
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbac0c0c0ff.png
+
+newmtl Aluminum_Satin
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+
+newmtl aluminum_noise
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba727473ff.png
+
+newmtl aluminum_noise_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbae8eaebff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl black_plastic
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl cast_aluminum
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbae8eaebff.png
+
+newmtl dranPlug
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba010101ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\screw_011_nrml_433287d3-a76d-4fda-b99d-ff3ae217da45.png
+
+newmtl oil_pan
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl painted_allum
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl blkPlastic_RGH_MGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\glossvariation_plastics_001_diff_f9028e14-b6e7-48ef-a1b7-505ca39c7dbf.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_002_nrml_e00ab1ec-c24a-448d-93fe-a2e7e32f3b99.png
+
+newmtl blkPlastic_LGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl solid_glass
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffff99.png
+
+newmtl Material__28
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+
+newmtl chrome_polished
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+
+newmtl exhaustHole
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+
+newmtl mirrorRight
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+
+newmtl Radiator_Grill
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbae8eaebff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\zigzag_002_nrml_52849f07-e47c-41bd-95be-d32954c3c42a.png
+
+newmtl Steel
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba010101ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bumperframe_chl1_001_nrml_30f6ef2e-1668-4bbc-a495-22a17c9a620e.png
+
+newmtl carpaint_nocc
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba00406bff.png
+
+newmtl carpaint_nocc_NML
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba00406bff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bumperframe_chl1_001_nrml_30f6ef2e-1668-4bbc-a495-22a17c9a620e.png
+
+newmtl carpaint_nocc_NML|bumperframer
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba727473ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl rubber_embossed_NML
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba020202ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bumperframe_chl1_001_nrml_30f6ef2e-1668-4bbc-a495-22a17c9a620e.png
+
+newmtl BMW_symbols_006
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bmw_m5e39_03_symbols_diff_8bb04906-17b6-4a44-853c-9589c08619f4.png
+
+newmtl blkLeather_bump_LGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\glossvariation_grunge_001_diff_bc81e44b-3149-4f40-8737-6fcacb81722c.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\leather_new_002_nrml_1a2df3f6-0a2c-48c4-9232-564094fc5fb3.png
+
+newmtl blkPaint_LGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\glossvariation_grunge_001_diff_bc81e44b-3149-4f40-8737-6fcacb81722c.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\dtl_noise_001_nrml_5dd6f476-72a5-49f5-84f1-a99fcc0ea196.png
+
+newmtl blkPlastic_RGH_LMGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\glossvariation_plastics_001_diff_f9028e14-b6e7-48ef-a1b7-505ca39c7dbf.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_002_nrml_e00ab1ec-c24a-448d-93fe-a2e7e32f3b99.png
+
+newmtl blkPlastic_ridges_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ridges_002c_nrml_23592955-5d94-4b4d-83a2-ac759310c50f.png
+
+newmtl blkleather_bump_mgl_003
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba0a0a0aff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\org_grain_002_nrml_d9301e60-0e02-4d8f-8530-e25edfc220ab.png
+
+newmtl leather_smooth_LGL
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba0a0a0aff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl seat_belt_003
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbab60000ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\seatbelt_lock_001_nrml_90acb569-8c9f-46e6-8fba-0faccb56e37a.png
+
+newmtl stitch_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba090909ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\stitch_001_nrml_23e2adc6-248e-45d9-bac1-341266ba9099.png
+
+newmtl blk_plastic_mgl
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl blk_plastic_ngl
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl blkPLastic_RGH_LGL|skirtr_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl gls_windshield|skirtr_a
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 500
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba19191966.png
+
+newmtl black
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+
+newmtl hub
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+
+newmtl inner_rim
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba67676aff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl lip
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba67676aff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl lug
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba8c8d8dff.png
+
+newmtl rim
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba67676aff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl wheel_badge
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bmw_badge_009_diff_805e7a98-437a-451e-beb7-edf5dbc80f24.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\bmw_badge_009_nrml_85c693f7-4b72-460b-9ca8-ec2717c90155.png
+
+newmtl wheel_emblem
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\m_001_diff_d9c573e7-0839-4d9a-8c88-c242bd8827e1.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\m_001_nrml_4a698731-63f5-4f46-9201-e10d5287395a.png
+
+newmtl scaling_text
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.70 0.70 0.70
+Ns 250
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba020202ff.png
+map_Ks d:\models\forza horizon 4\media\cars\bmw_m5e39_03\tire_a_glos_2ccdddda-1ea6-4ebe-b40c-425989b0d6b7.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\tire_f_nrml_f43c9f24-8c4a-40b0-bb7b-88f39bb2b7c6.png
+
+newmtl sidewall
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.70 0.70 0.70
+Ns 250
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba020202ff.png
+map_Ks d:\models\forza horizon 4\media\cars\bmw_m5e39_03\tiresidewall_a_glos_70f18d58-9322-429c-ae84-1499d55d4477.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\tiresidewall_c_nrml_2520cd86-a7d4-4743-8d41-112001b57342.png
+
+newmtl AlumPolished
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbae8eaebff.png
+
+newmtl CarbonFiber
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba191919ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\carbonfiber_002_nrml_194c9b40-16a6-4a38-9eb7-6f8afd24dba2.png
+
+newmtl grillbackground_acRadiator_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba171717ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\grillbackground_radiator_001_nrml_b25a422b-aa3f-4268-b696-a9fd139c54bf.png
+
+newmtl Carbonfiber_001
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba191919ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ptn_weave_003_flip_nrml_a1c6be74-333e-4356-ab2d-607cebf22a74.png
+
+newmtl PaintedMetal
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgbaffffffff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\roughness_fine_001_nrml_05f5bb01-0c08-4f31-93e1-4130e6f64c2b.png
+
+newmtl SteelCast
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.95 0.95 0.95
+Ns 100
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba727473ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\dtl_roughttexture_005_nrml_e3467508-b441-4a00-a692-0fdfba740dd4.png
+
+newmtl GrillChromeFilled_005
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\ptn_grilldiamond_001_nrml_f222c8b8-b07d-45e9-9de4-a0cb480faa1f.png
+
+newmtl WeldSeam
+ka 1.00 1.00 1.00
+kd 1.00 1.00 1.00
+ks 0.00 0.00 0.00
+Ns 50
+map_Kd d:\models\forza horizon 4\media\cars\bmw_m5e39_03\rgba000000ff.png
+bump d:\models\forza horizon 4\media\cars\bmw_m5e39_03\weld_002_nrml_4b8af59f-7ff0-4109-a7ea-edc813a9f888.png

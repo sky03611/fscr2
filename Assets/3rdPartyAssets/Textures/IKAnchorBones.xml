@@ -1,0 +1,7 @@
+
+<IKAnchorBones Version="2" HandGripAmount="0.536000" ReclineAmount="0.153000">
+  <Bone Version="2" Name="anchor_righthand" OffsetX="-0.002000" OffsetY="0.018000" OffsetZ="-0.001000"/>
+  <Bone Version="2" Name="anchor_lefthand" OffsetX="0.011000" OffsetY="0.035000" OffsetZ="0.012000"/>
+  <Bone Version="2" Name="anchor_butt" OffsetX="-0.010000" OffsetY="0.075000" OffsetZ="-0.035000"/>
+  <Bone Version="2" Name="anchor_shifter" OffsetX="-0.030000" OffsetY="-0.010000" OffsetZ="-0.085000"/>
+</IKAnchorBones>
