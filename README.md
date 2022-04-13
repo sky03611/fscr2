@@ -2,6 +2,8 @@
 As i have to work on my own project, I'll upload to thes repo rarely. Anyways, basic stuff is already implemented. <br>If you have some questions, you can write me<br> Discord Skuz#3432 <br><br>
 ====13.04.2022====<br>
 Added new Model<br>
+New component system<br>
+Added Brakes<br>
 Arcade Drivetrain Added<br><br>
 ====05.04.2022====<br>
 Added new Wheel Controller script which doesn't use pacejka friction model<br>
