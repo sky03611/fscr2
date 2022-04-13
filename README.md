@@ -4,6 +4,8 @@ As i have to work on my own project, I'll upload to thes repo rarely. Anyways, b
 Added new Model<br>
 New component system<br>
 Added Brakes<br>
+Added Handbrake<br>
+Simple Automatic shifter<br>
 Arcade Drivetrain Added<br><br>
 ====05.04.2022====<br>
 Added new Wheel Controller script which doesn't use pacejka friction model<br>
