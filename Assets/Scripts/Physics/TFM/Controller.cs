@@ -18,6 +18,7 @@ public class Controller : MonoBehaviour
     [SerializeField] KeyCode shiftUpBtn;
     [SerializeField] KeyCode shiftDownBtn;
     [SerializeField] KeyCode clutchBtn;
+    [SerializeField] KeyCode handBrakeBtn;
     enum DriveTrainType { Arcade, Sim };
     [SerializeField] DriveTrainType driveTrainType;
     private Rigidbody rb;
@@ -29,6 +30,8 @@ public class Controller : MonoBehaviour
     private float angleL;
     private float angleR;
     private float clutch;
+    private float btR; // brake torque rear
+    private bool handBrake;
     private float[] wheelTorque = new float[2];
     private float[] angularVelocities = new float[4];
 
@@ -108,6 +111,14 @@ public class Controller : MonoBehaviour
         {
             clutch = Mathf.Lerp(clutch, 0, Time.deltaTime); ;
         }
+        if (Input.GetKey(handBrakeBtn))
+        {
+            handBrake = true;
+        }
+        else 
+        {
+            handBrake = false;
+        }
     }
 
     private void UpdatePhysics()
@@ -148,6 +159,7 @@ public class Controller : MonoBehaviour
         {
             inputBrakes = -0.2f;
         }
+
         Debug.Log(inputBrakes);
         UpdateWheels(wheelTorque, brakes.GetBrakes(inputBrakes, angularVelocities));
         arcadeDriveTrain.PhysicsUpdate(deltaTime, inputThrottle, whAVRL, whAVRR, clutch);
@@ -193,14 +205,19 @@ public class Controller : MonoBehaviour
 
     private void UpdateWheels(float[] _driveTorque, float[] _brakeTorque)
     {
-        if(rb.velocity.magnitude<2f && inputThrottle < 0.1f)
+        
+        if(handBrake)
         {
-
+            btR = Mathf.Lerp(btR, 5000f, Time.deltaTime * 8f);
+        }
+        else
+        {
+            btR = _brakeTorque[1];
         }
         wheelControllers[0].PhysicsUpdate(0, _brakeTorque[0], deltaTime);
         wheelControllers[1].PhysicsUpdate(0, _brakeTorque[0], deltaTime);
-        wheelControllers[2].PhysicsUpdate(_driveTorque[0], _brakeTorque[1], deltaTime);
-        wheelControllers[3].PhysicsUpdate(_driveTorque[1], _brakeTorque[1], deltaTime);
+        wheelControllers[2].PhysicsUpdate(_driveTorque[0], btR, deltaTime);
+        wheelControllers[3].PhysicsUpdate(_driveTorque[1], btR, deltaTime);
     }
 
     

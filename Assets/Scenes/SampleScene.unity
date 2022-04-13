@@ -1966,6 +1966,7 @@ MonoBehaviour:
   shiftUpBtn: 112
   shiftDownBtn: 108
   clutchBtn: 120
+  handBrakeBtn: 32
   driveTrainType: 0
 --- !u!114 &1621305970
 MonoBehaviour:
@@ -2125,7 +2126,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  engineMultiplier: 2
+  engineMultiplier: 2.5
   startFriction: -10
   frictionCoefficient: 0.02
   engineInertia: 4
@@ -2146,6 +2147,7 @@ MonoBehaviour:
   shiftTime: 0.3
   diffLocked: 1
   differentialRatio: 3.23
+  autoShifter: 1
 --- !u!114 &1621305974
 MonoBehaviour:
   m_ObjectHideFlags: 0

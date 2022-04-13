@@ -34,6 +34,7 @@ public class ArcadeDriveTrain2 : MonoBehaviour
     [SerializeField] private float shiftTime = 0.2f;
     [SerializeField] private bool diffLocked;
     [SerializeField] private float differentialRatio = 3.23f;
+    [SerializeField] private bool autoShifter;
     private float[] angularVelocity = new float[2];
     private float[] outputTorque = new float[2];
     private int currentGear = 1;
@@ -64,6 +65,7 @@ public class ArcadeDriveTrain2 : MonoBehaviour
         var angularData = GetDifferentialInputShaftVelocity(wheelVelocityL, wheelVelocityR) * gearboxRatio[currentGear] * differentialRatio;
         CalculateEngine(input, angularData);
         TransmissionTorque();
+        AutomaticShifter();
 
     }
 
@@ -109,7 +111,18 @@ public class ArcadeDriveTrain2 : MonoBehaviour
         transmissionTorque = driveTorque * gearboxRatio[currentGear];
     }
 
-
+    private void AutomaticShifter()
+    {
+        if (!autoShifter) return;
+        if(engineRpm >= engineMaxRpm - 300f && inGear)
+        {
+            ChangeGearUp();
+        }
+        if(engineRpm<=2500 && inGear && currentGear > 2)
+        {
+            ChangeGearDown();
+        }
+    }
 
     public void ChangeGearUp()
     {
