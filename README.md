@@ -5,6 +5,8 @@ Also Join our Discord server <a href="https://discord.gg/U2rcepWvuu">Vehicle Phy
 ====15.04.2022====<br>
 Fixed locked differential<br>
 Fixed brakes<br>
+Fixed dashboard on Sim Type<br>
+Minor fixes throughout the code<br>
 Added AntirRolBar(Sway bar)<br>
 Added custom timestamp by AESTHETIC<br>
 New camera controller by BlinkAChu<br><br>
