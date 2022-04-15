@@ -7,7 +7,7 @@ public class ClutchComponent : MonoBehaviour
     [SerializeField] private float clutchStiffness = 30f;
     [SerializeField] private float clutchCapacity = 1.3f;
     [SerializeField] private float engineMaxTorque = 300f;
-    [Range(0.1f,0.9f)]
+    [Range(0.1f,0.99f)]
     [SerializeField] private float clutchDamping;
     private EngineComponent engine;
     private float clutchTorque;
@@ -44,15 +44,6 @@ public class ClutchComponent : MonoBehaviour
         clutchTorque = clt + ((clutchTorque - clt) * clutchDamping);
     }
 
-    private void SimpleClutchTorque()
-    {
-        clutchLock = gearBoxRatio == 0 ? 0 : MapRangeClamped(engineAngularVelocity * radToRpm, 1000, 1300, 0, 1);
-        
-        if(clutchLock == 1)
-        {
-            clutchTorque = engineAngularVelocity * Mathf.Abs(Mathf.Sign(gearBoxRatio));
-        }
-    }
 
     private float MapRangeClamped(float value, float inRangeA, float inRangeB, float outRangeA, float outRangeB)
     {

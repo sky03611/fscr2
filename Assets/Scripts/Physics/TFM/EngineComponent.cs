@@ -12,6 +12,9 @@ public class EngineComponent : MonoBehaviour
     [SerializeField] private float engineIdleRpm;
     [SerializeField] private float engineMaxRpm;
     [SerializeField] private float engineMul = 2f;
+    [SerializeField] private Vector3 engineOrientation = Vector3.right;
+    private Rigidbody rb;
+    private GearBoxComponent gearBox;
     private float rpmToRad;
     private float radToRpm;
     private float maxEffectiveTorque;
@@ -21,8 +24,10 @@ public class EngineComponent : MonoBehaviour
     private float engineAngularVelocity;
 
 
-    public void InitializeEngine()
+    public void InitializeEngine(Rigidbody _rb, GearBoxComponent _gearBox)
     {
+        rb = _rb;
+        gearBox = _gearBox;
         rpmToRad = Mathf.PI * 2 / 60;
         radToRpm = 1 / rpmToRad;
         engineIdleRpm *= rpmToRad;
@@ -30,7 +35,7 @@ public class EngineComponent : MonoBehaviour
         engineAngularVelocity = 100;
     }
 
-    public void PhysicsUpdate(float dt, float input, float loadTorque)
+    public void UpdatePhysics(float dt, float input, float loadTorque)
     {
         maxEffectiveTorque = torqueCurve.Evaluate(engineRpm) * engineMul;
         engineFriction = (engineRpm * frictionCoefficient) + startFriction;
@@ -39,7 +44,10 @@ public class EngineComponent : MonoBehaviour
         engineAngularVelocity += engineAcceleration * dt;
         engineRpm = engineAngularVelocity * radToRpm;
         engineAngularVelocity = Mathf.Clamp(engineAngularVelocity, engineIdleRpm, engineMaxRpm);
-
+        if (gearBox.GetGearBoxRatio() == 0)
+        {
+            rb.AddTorque(engineOrientation * engineTorque * 2);
+        }
     }
 
     public float GetAngularVelocity()

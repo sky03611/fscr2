@@ -25,8 +25,6 @@ public class ArcadeDriveTrain2 : MonoBehaviour
     private float engineFriction;
     private float engineTorque;
     private float driveTorque;
-    private float engineAngularVelocity;
-    bool revDown;
     private float throttle;
     [Header("GearBox and Diff")]
     [SerializeField] private float clutch;
@@ -52,7 +50,6 @@ public class ArcadeDriveTrain2 : MonoBehaviour
         rb = _rb;
         rpmToRad = Mathf.PI * 2 / 60;
         radToRpm = 1 / rpmToRad;
-        engineAngularVelocity = 100;
         wheelInertia = _wheelInertia;
     }
 

@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    //Custom Timestamp by AESTHETIC 
+    private CustomFixedUpdate m_FixedUpdate;
+    [SerializeField] private bool useCustomFixedUpdate;
+    [Range(1, 10000)]
+    [SerializeField] float frequency;
     [SerializeField] Debugger debug;
     [SerializeField] WheelControllerTFM[] wheelControllers;
     [SerializeField] EngineComponent engine;
@@ -41,7 +46,7 @@ public class Controller : MonoBehaviour
     {
         rb = transform.root.GetComponent<Rigidbody>();
         rb.centerOfMass = Vector3.zero;
-        engine.InitializeEngine();
+        engine.InitializeEngine(rb, gearBox);
         steering.InitializeSteering(wheelControllers);
         clutchComponent.InitializeClutch();
         arcadeDriveTrain.InitializeArcadeDT(wheelControllers[0].GetWheelInertia(), rb);
@@ -50,8 +55,22 @@ public class Controller : MonoBehaviour
         differential.InitializeDifferential(wheelControllers);
     }
 
+    private void Start()
+    {
+        if (useCustomFixedUpdate)
+        {
+            frequency = Mathf.Ceil(Mathf.Clamp(frequency, 1, Mathf.Infinity));
+            deltaTime = 1 / frequency;
+            m_FixedUpdate = new CustomFixedUpdate(deltaTime, UpdateAtCustomTimestep);
+        }
+    }
+
     private void Update()
     {
+        if (useCustomFixedUpdate)
+        {
+            m_FixedUpdate.Update(Time.deltaTime);
+        }
         if (driveTrainType == DriveTrainType.Sim) 
         {
             GearBoxShifterSim();
@@ -64,39 +83,39 @@ public class Controller : MonoBehaviour
         }
     }
 
-    private void GearBoxShifterArcade()
+    private void UpdateAtCustomTimestep()
     {
-        //ShiftUp
-        if (Input.GetKeyDown(shiftUpBtn))
+        //CUSTOM UPDATE RATE IS PROVIDED BY AESTHETIC
+        if (useCustomFixedUpdate)
         {
-            arcadeDriveTrain.ChangeGearUp();
-        }
-        //ShiftDown
-        if (Input.GetKeyDown(shiftDownBtn))
-        {
-            arcadeDriveTrain.ChangeGearDown();
-        }
-    }
-
-    private void GearBoxShifterSim()
-    {
-        //ShiftUp
-        if (Input.GetKeyDown(shiftUpBtn))
-        {
-            gearBox.ChangeGearUp();
-        }
-        //ShiftDown
-        if (Input.GetKeyDown(shiftDownBtn))
-        {
-            gearBox.ChangeGearDown();
+            UpdatePhysics();
         }
     }
 
     private void FixedUpdate()
     {
-        deltaTime = Time.fixedDeltaTime;
-        InputUpdate();
-        UpdatePhysics();
+        if (!useCustomFixedUpdate)
+        {
+            InputUpdate();
+            UpdateSteering();
+            UpdateDownForce();
+            deltaTime = Time.fixedDeltaTime;
+            UpdatePhysics();
+            if (driveTrainType == DriveTrainType.Arcade)
+            {
+                ArcadeDriveTrain();
+                debug.Line1(arcadeDriveTrain.GetRpm());
+                debug.Line4(arcadeDriveTrain.GetCurrentGear());
+            }
+        }
+        else
+        {
+
+            InputUpdate();
+            UpdateSteering();
+            UpdateDownForce();
+        }
+        
     }
 
     private void InputUpdate()
@@ -125,8 +144,6 @@ public class Controller : MonoBehaviour
     private void UpdatePhysics()
     {
         debug.Line5(rb.velocity.magnitude * 3.6f);
-        UpdateSteering();
-        UpdateDownForce();
         antirollBar.CalculateAntirollBar();
         if (driveTrainType == DriveTrainType.Sim)
         {
@@ -135,12 +152,6 @@ public class Controller : MonoBehaviour
             debug.Line2(clutchComponent.GetClutchTorque());
             debug.Line3(clutchComponent.GetLock());
             debug.Line4(gearBox.GetCurrentGear());
-        }
-        else
-        {
-            ArcadeDriveTrain();
-            debug.Line1(arcadeDriveTrain.GetRpm());
-            debug.Line4(arcadeDriveTrain.GetCurrentGear());
         }
     }
 
@@ -174,7 +185,7 @@ public class Controller : MonoBehaviour
         var dInputShaftVel = differential.GetInputShaftVelocity(whAVL, whAVR);
         var gBoxInShaftVel = gearBox.GetInputShaftVelocity(dInputShaftVel);
         clutchComponent.UpdatePhysics(gBoxInShaftVel, engine.GetAngularVelocity(), gearBox.GetGearBoxRatio());
-        engine.PhysicsUpdate(deltaTime, inputThrottle, clutchComponent.GetClutchTorque());
+        engine.UpdatePhysics(deltaTime, inputThrottle, clutchComponent.GetClutchTorque());
     }
 
     private void UpdateSteering()
@@ -208,6 +219,34 @@ public class Controller : MonoBehaviour
         wheelControllers[1].PhysicsUpdate(0, _brakeTorque[0], deltaTime);
         wheelControllers[2].PhysicsUpdate(_driveTorque[0], btR, deltaTime);
         wheelControllers[3].PhysicsUpdate(_driveTorque[1], btR, deltaTime);
+    }
+
+    private void GearBoxShifterArcade()
+    {
+        //ShiftUp
+        if (Input.GetKeyDown(shiftUpBtn))
+        {
+            arcadeDriveTrain.ChangeGearUp();
+        }
+        //ShiftDown
+        if (Input.GetKeyDown(shiftDownBtn))
+        {
+            arcadeDriveTrain.ChangeGearDown();
+        }
+    }
+
+    private void GearBoxShifterSim()
+    {
+        //ShiftUp
+        if (Input.GetKeyDown(shiftUpBtn))
+        {
+            gearBox.ChangeGearUp();
+        }
+        //ShiftDown
+        if (Input.GetKeyDown(shiftDownBtn))
+        {
+            gearBox.ChangeGearDown();
+        }
     }
 
     public WheelControllerTFM[] GetWheels()
