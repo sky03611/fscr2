@@ -55,6 +55,7 @@ public class Controller : MonoBehaviour
         if (driveTrainType == DriveTrainType.Sim) 
         {
             GearBoxShifterSim();
+            dashboard.UpdateD(engine.GetRpm());
         }
         else 
         {
