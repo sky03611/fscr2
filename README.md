@@ -1,5 +1,7 @@
 # fscr2 - public version
-As i have to work on my own project, I'll upload to thes repo rarely. Anyways, basic stuff is already implemented. <br>If you have some questions, you can write me<br> Discord Skuz#3432 <br><br>
+As i have to work on my own project, I'll upload to thes repo rarely. Anyways, basic stuff is already implemented. <br>If you have some questions, you can write me<br> Discord Skuz#3432<br>
+Also Join our Discord server <p><a href="https://discord.gg/U2rcepWvuu">Vehicle Physics</a></p>
+<br><br>
 ====15.04.2022====<br>
 Fixed locked differential<br>
 Fixed brakes<br>
