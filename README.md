@@ -9,7 +9,7 @@ Added AntirRolBar(Sway bar)<br>
 Added custom timestamp by AESTHETIC<br>
 New camera controller by BlinkAChu<br><br>
 ====13.04.2022====<br>
-Added new Model<br> (by Ivan Novozhilov)
+Added new Model (by Ivan Novozhilov)<br> 
 New component system<br>
 Added Brakes<br>
 Added Handbrake<br>
