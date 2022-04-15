@@ -4,7 +4,7 @@ As i have to work on my own project, I'll upload to thes repo rarely. Anyways, b
 Fixed locked differential<br>
 Fixed brakes<br>
 Added AntirRolBar(Sway bar)<br>
-New camera controller by BlinkAChu<br>
+New camera controller by BlinkAChu<br><br>
 ====13.04.2022====<br>
 Added new Model<br>
 New component system<br>
