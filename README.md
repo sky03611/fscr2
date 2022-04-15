@@ -36,5 +36,5 @@ Transient forces(don't work on new WheelController), <br>
 Resistance forces, <br>
 Simple brakes. <br>
  <br> <br>
- Model is used only in demonstrative purposes!!!
+Car Model is used only in demonstrative purposes!!!
 
