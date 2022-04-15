@@ -1,10 +1,10 @@
 # fscr2 - public version
 As i have to work on my own project, I'll upload to thes repo rarely. Anyways, basic stuff is already implemented. <br>If you have some questions, you can write me<br> Discord Skuz#3432 <br><br>
-====13.04.2022====<br>
+====15.04.2022====<br>
 Fixed locked differential<br>
 Fixed brakes<br>
 Added AntirRolBar(Sway bar)<br>
-New camera controller by BlinkAChu
+New camera controller by BlinkAChu<br>
 ====13.04.2022====<br>
 Added new Model<br>
 New component system<br>
