@@ -6,6 +6,7 @@ Also Join our Discord server <a href="https://discord.gg/U2rcepWvuu">Vehicle Phy
 Fixed locked differential<br>
 Fixed brakes<br>
 Added AntirRolBar(Sway bar)<br>
+Added custom timestamp by AESTHETIC<br>
 New camera controller by BlinkAChu<br><br>
 ====13.04.2022====<br>
 Added new Model<br>
