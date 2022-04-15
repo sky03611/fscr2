@@ -14,6 +14,7 @@ public class Controller : MonoBehaviour
     [SerializeField] DifferentialComponent differential;
     [SerializeField] BrakesComponent brakes;
     [SerializeField] ArcadeDriveTrain2 arcadeDriveTrain;
+    [SerializeField] AntiRollBarComponent antirollBar;
     [SerializeField] Dashboard dashboard;
     [SerializeField] KeyCode shiftUpBtn;
     [SerializeField] KeyCode shiftDownBtn;
@@ -38,7 +39,6 @@ public class Controller : MonoBehaviour
 
     private void Awake()
     {
-       
         rb = transform.root.GetComponent<Rigidbody>();
         rb.centerOfMass = Vector3.zero;
         engine.InitializeEngine();
@@ -46,6 +46,8 @@ public class Controller : MonoBehaviour
         clutchComponent.InitializeClutch();
         arcadeDriveTrain.InitializeArcadeDT(wheelControllers[0].GetWheelInertia(), rb);
         dashboard.InitDashboard(rb, 10000f);
+        antirollBar.InitializeAntirollBar(wheelControllers);
+        differential.InitializeDifferential(wheelControllers);
     }
 
     private void Update()
@@ -59,8 +61,6 @@ public class Controller : MonoBehaviour
             GearBoxShifterArcade();
             dashboard.UpdateD(arcadeDriveTrain.GetRpm());
         }
-
-        
     }
 
     private void GearBoxShifterArcade()
@@ -126,6 +126,7 @@ public class Controller : MonoBehaviour
         debug.Line5(rb.velocity.magnitude * 3.6f);
         UpdateSteering();
         UpdateDownForce();
+        antirollBar.CalculateAntirollBar();
         if (driveTrainType == DriveTrainType.Sim)
         {
             SimDriveTrain();
@@ -140,9 +141,6 @@ public class Controller : MonoBehaviour
             debug.Line1(arcadeDriveTrain.GetRpm());
             debug.Line4(arcadeDriveTrain.GetCurrentGear());
         }
-        
-
-       
     }
 
     private void ArcadeDriveTrain()
@@ -155,36 +153,28 @@ public class Controller : MonoBehaviour
         angularVelocities[1] = whAVFR;
         angularVelocities[2] = whAVRL;
         angularVelocities[3] = whAVRR;
-        if (inputThrottle < 0.2f && Input.GetAxis("Vertical") >= 0) // dirty cheat
+        if (inputThrottle < 0.2f && Input.GetAxis("Vertical") >= 0 && inputBrakes <-0.3f) // dirty cheat
         {
             inputBrakes = -0.2f;
         }
-
-        Debug.Log(inputBrakes);
+        
         UpdateWheels(wheelTorque, brakes.GetBrakes(inputBrakes, angularVelocities));
         arcadeDriveTrain.PhysicsUpdate(deltaTime, inputThrottle, whAVRL, whAVRR, clutch);
         wheelTorque = arcadeDriveTrain.GetDifferentialTorque();
-        //engine.PhysicsUpdate(deltaTime, 0, wheelControllers[3].GetLoadTorque() * gearBox.GetGearBoxRatio() * 3.23f);
-        
-
     }
 
     private void SimDriveTrain()
     {
-        
         var gbxTorque = gearBox.GetOutputTorque(clutchComponent.GetClutchTorque());
         wheelTorque = differential.GetOutputTorque(gbxTorque);
-        UpdateWheels(wheelTorque, angularVelocities);
+        UpdateWheels(wheelTorque, brakes.GetBrakes(inputBrakes, angularVelocities));
         var whAVL = wheelControllers[2].GetWheelAngularVelocity();
         var whAVR = wheelControllers[3].GetWheelAngularVelocity();
         var dInputShaftVel = differential.GetInputShaftVelocity(whAVL, whAVR);
         var gBoxInShaftVel = gearBox.GetInputShaftVelocity(dInputShaftVel);
         clutchComponent.UpdatePhysics(gBoxInShaftVel, engine.GetAngularVelocity(), gearBox.GetGearBoxRatio());
-        
         engine.PhysicsUpdate(deltaTime, inputThrottle, clutchComponent.GetClutchTorque());
     }
-
-    
 
     private void UpdateSteering()
     {
@@ -205,7 +195,6 @@ public class Controller : MonoBehaviour
 
     private void UpdateWheels(float[] _driveTorque, float[] _brakeTorque)
     {
-        
         if(handBrake)
         {
             btR = Mathf.Lerp(btR, 5000f, Time.deltaTime * 8f);
@@ -219,8 +208,6 @@ public class Controller : MonoBehaviour
         wheelControllers[2].PhysicsUpdate(_driveTorque[0], btR, deltaTime);
         wheelControllers[3].PhysicsUpdate(_driveTorque[1], btR, deltaTime);
     }
-
-    
 
     public WheelControllerTFM[] GetWheels()
     {

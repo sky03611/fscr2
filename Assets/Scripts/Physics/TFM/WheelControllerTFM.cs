@@ -112,6 +112,7 @@ public class WheelControllerTFM : MonoBehaviour
         GetSx();
         GetSy();
         AddTireForce();
+        Debug.Log("??");
     }
 
     private void Raycast()
@@ -202,6 +203,11 @@ public class WheelControllerTFM : MonoBehaviour
         rb.AddForceAtPosition(combinedForceNorm, transform.position - (transform.up * (currentLength + wheelRadius)));
     }
 
+    public void ApplyAntirollBar(float force)
+    {
+        rb.AddForceAtPosition(force * transform.up, transform.position);
+    }
+
     private void ApplyVisuals()
     {
         //Credits Blinkachu
@@ -221,10 +227,15 @@ public class WheelControllerTFM : MonoBehaviour
         return wheelInertia;
     }
 
-    //public float GetLoadTorque()
-    //{
-    //    return angularAcceleration/wheelInertia ;
-    //}
+    public float GetSuspensionCurrentLength()
+    {
+        return currentLength;
+    }
+
+    public float GetSuspensionRestLength()
+    {
+        return restLength;
+    }
     public bool GetWheelHit()
     {
         return wheelHit;
